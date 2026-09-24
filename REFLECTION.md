@@ -40,6 +40,7 @@ polymorphism/abstraction with T value!
    your own words and without copying the guide’s wording, the smallest example you can think
    of where leaving it out would cause a real problem.
 - I am choosing the keyword 'virtual destructor' from the glossary which in my mind is just the official keyterm to label the garbage collector
-inside c++ especially when dealing with memory inside of c++ and its limited space. In this case, when we are deleting from deleteFront() when using LinkedLists, 
-if we were not to use the 'virtual destructor' aka delete func. then when we'd "delete" a node the node itself would still be there and take up space but by using
-the destructor we make sure to compellty get rid of it and free up space in the memory for further use on the same program! If we werent then we'd end up with many nodes and little memory!
+  inside c++ especially when dealing with memory inside of c++ and its limited space. In this case, when we are deleting from deleteFront() when using LinkedLists,
+  if we were not to use the 'virtual destructor' aka delete func. then when we'd "delete" a node the node itself would still be there and take up space but by using
+  the destructor we make sure to compellty get rid of it and free up space in the memory for further use on the same program! IF we didn't use this then we could end up in a situation with
+a lot of empty nodes just taking up memory space.
