@@ -10,7 +10,7 @@ using namespace std;
 template <typename T>
 class ArrayList : public List<T> {
 public:
-    void addFront(T* value) override {
+ void addFront(T* value) override {
         if (size_ >= CAPACITY) {
             std::cout << "ArrayList is full." << std::endl;
             return;
@@ -32,7 +32,7 @@ public:
         }
         --size_;
     }
-    
+
     bool search(T* value) const override {
         for (int i = 0; i < size_; ++i) {
             if (*data_[i] == *value) return true;
