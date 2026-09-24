@@ -53,5 +53,3 @@ public:
 private:
     Node<T>* head_;
 };
-
-
