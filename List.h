@@ -1,5 +1,5 @@
 //
-// Created by Ariana Astorga Vega on 9/21/26.
+// Created by Ariana Astorga Vega on 9/21/26
 //
 
 #pragma once
